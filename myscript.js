@@ -22,7 +22,7 @@ function changeStyle(event) {
   setTimeout(nextPage,1000)
 
   function nextPage() {
-    if (c == 3) {
+    if (c == 10) {
       resaultPage()
     } else {
       event.preventDefault()
@@ -122,10 +122,11 @@ function changeStyle(event) {
     restartButton.onclick = () => {window.location.href = "http://127.0.0.1:8080/index.htm"}
     
     k = 0
-    for (let question of questions) {
+      
+    questions.forEach(question => {
       wrong = createForm(question,answers[n],answers[n+1],answers[n+2])
       n += 4
-    }
+    })
     
     let wrongPercent = (wrong / 10) * 100
     let correctPercent = 100 - wrongPercent
