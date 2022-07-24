@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <h1 id="header" class="persian">:کوئیز</h1>
+    <p id="resaultText" class="persian"></p>
+    <form id="quiz">
+        <label><strong class="persian" id="question">پایتخت کانادا؟</strong></label><br><br>
+        <div id="xDiv">
+            <input onclick="changeStyle(event)" class="persian" type="radio" name="q" value="x">
+            <label class="persian" id="x" for="x">تورنتو</label><br><br>
+        </div>
+        <div id="yDiv">
+            <input onclick="changeStyle(event)" class="persian" type="radio" name="q" value="y">
+            <label class="persian" id="y" for="y">مونترال</label><br><br>
+        </div>
+        <div id="zDiv">
+            <input onclick="changeStyle(event)" class="persian" type="radio" name="q" value="z">
+            <label class="persian" id="z" for="z">اتاوا</label><br><br>
+        </div>
+    </form>
+
+    <br>
+    <h3 id="num">1 سوال</h3>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
