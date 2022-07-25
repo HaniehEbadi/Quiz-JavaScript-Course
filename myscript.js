@@ -22,7 +22,7 @@ function changeStyle(event) {
   setTimeout(nextPage,1000)
 
   function nextPage() {
-    if (c == 10) {
+    if (c == 11) {
       resaultPage()
     } else {
       event.preventDefault()
